@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="sideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="#nowPlaying">Now playing</a>
+        <a href="#popular">Popular</a>
+        <a href="#topRated">Top Rated</a>
+        <a href="#trending">Trending</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
+
+    <div id="search" class="section">
+        <h2>Search Movies</h2>
+        <input type="text" id="searchInput" placeholder="Search for movies...">
+        <button onclick="searchMovies()">Search</button>
+    </div>
+
+    <div id="nowPlaying" class="section">
+        <h2>Now Playing</h2>
+        <div id="nowPlayingGrid" class="movie-grid"></div>
+    </div>
+
+    <div id="popular" class="section">
+        <h2>Popular</h2>
+        <div id="popularGrid" class="movie-grid"></div>
+    </div>
+
+    <div id="topRated" class="section">
+        <h2>Top Rated</h2>
+        <div id="topRatedGrid" class="movie-grid"></div>
+    </div>
+
+    <div id="trending" class="section">
+        <h2>Trending</h2>
+        <div id="trendingGrid" class="movie-grid"></div>
+    </div>
+
+    <div id="upcoming" class="section">
+        <h2>Upcoming</h2>
+        <div id="upcomingGrid" class="movie-grid"></div>
+    </div>
+
+    <!-- <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-row">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="repassword" placeholder="Re-enter Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div> -->
+    
+    <div id="contact">
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="phone" placeholder="Phone">
+            <input type="number" id="age" placeholder="Age">
+            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="repassword" placeholder="Re-enter Password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">&#8679;</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
